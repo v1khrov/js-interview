@@ -52,3 +52,13 @@ console.log(myYear.year);
 console.log(myYear.hasOwnProperty('year')); //false
 console.log(myYear.__proto__ === proto);    //true
 
+
+//__proto__ это setter/getter и находится в прототипе
+const a = {x: 1};
+
+console.log(a.__proto__ === Object.prototype); //true
+console.log(a.hasOwnProperty('x')); //true
+
+console.log(a.hasOwnProperty('__proto__')); //false в самом объекте есть только [[Prototype]]
+console.log(a.__proto__.hasOwnProperty('__proto__')); //true __proto__ это setter/getter и находится в прототипе
+

@@ -16,7 +16,9 @@ console.log(`c=${c}`);  //1,2,3,4
 console.log(`d=${d}`);  //1,2,3,4 
 console.log(`e=${e}`);  //1,2,3,5 
 
-
 let f = [1,2,3,4];
 console.log(a === b);   //true
 console.log(a === f);   //false, a и f это разные объекты!
+
+
+
