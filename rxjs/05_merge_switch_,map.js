@@ -1,4 +1,4 @@
-const { Observable, timer, take, mergeMap, switchMap, map, filter } = require("rxjs");
+const { Observable, timer, interval, take, mergeMap, switchMap, map, filter } = require("rxjs");
 
 timer(0, 1500).pipe(
   take(3),
@@ -21,3 +21,4 @@ timer(0, 1500).pipe(
     );
   })
 ).subscribe(i => {console.log(`SwitchMap: ${i}`)});
+
